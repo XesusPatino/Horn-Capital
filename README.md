@@ -7,7 +7,7 @@
 **Aplicación para finanzas personales.**<br>
 *Lleva el control de tus finanzas en segundos.*
 
-![Next.js](https://img.shields.io/badge/Next.js_16-000000logo=nextdotjs&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js_16-000000?logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?logo=tailwindcss&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
@@ -17,17 +17,19 @@
 
 </div>
 
-<!--
-  CAPTURAS: hazlas en el móvil con el modo privado activado (el ojo junto a
-  "Saldo total") o con una cuenta de ejemplo, guárdalas en docs/img/ y quita
-  este comentario.
-
 <p align="center">
-  <img src="docs/img/captura-inicio.png" alt="Inicio" width="240">
-  <img src="docs/img/captura-inversiones.png" alt="Inversiones" width="240">
-  <img src="docs/img/captura-atajo.png" alt="Atajo del móvil" width="240">
+  <img src="docs/img/collage.jpg" alt="Inicio, inversiones, presupuesto y movimientos de Horn Capital en el móvil" width="100%">
 </p>
--->
+
+<details>
+<summary><b>Más capturas</b></summary>
+<br>
+<p align="center">
+  <img src="docs/capturas/main2.jpeg" alt="Inicio: cuentas, inversiones y últimos movimientos" width="250">
+  <img src="docs/capturas/analisis.jpeg" alt="Menú de análisis" width="250">
+  <img src="docs/capturas/ajustes.jpeg" alt="Menú de ajustes" width="250">
+</p>
+</details>
 
 ## La idea
 
@@ -58,9 +60,9 @@ Un triceratops en la pantalla de inicio te dice cómo vas con el presupuesto del
 
 <table align="center">
   <tr>
-    <td align="center"><img src="docs/img/mascota-rico.png" alt="Triceratops rico" height="200"></td>
-    <td align="center"><img src="docs/img/mascota-normal.png" alt="Triceratops normal" height="200"></td>
-    <td align="center"><img src="docs/img/mascota-pobre.png" alt="Triceratops vagabundo" height="200"></td>
+    <td align="center"><img src="docs/img/mascota-rico.png" alt="Triceratops rico" height="150"></td>
+    <td align="center"><img src="docs/img/mascota-normal.png" alt="Triceratops normal" height="150"></td>
+    <td align="center"><img src="docs/img/mascota-pobre.png" alt="Triceratops vagabundo" height="150"></td>
   </tr>
   <tr>
     <td align="center"><b>Rico</b><br><sub>Te queda el 62,5 % o más</sub></td>
@@ -109,6 +111,10 @@ flowchart LR
 
 ## Ponerla en marcha
 
+<details>
+<summary>Instalación en local con tu propio proyecto de Supabase</summary>
+<br>
+
 Necesitas Node.js y un proyecto de [Supabase](https://supabase.com) (el plan gratuito sirve).
 
 ```bash
@@ -127,7 +133,13 @@ npm run auditar               # ninguna consulta sin filtro por usuario
 npm run probar:aislamiento    # un usuario no ve los datos de otro
 ```
 
+</details>
+
 ## Estructura
+
+<details>
+<summary>Cómo está organizado el código</summary>
+<br>
 
 ```
 src/
@@ -138,6 +150,8 @@ src/
 prisma/         Modelo de datos y migraciones
 scripts/        Diagnóstico, auditoría y pruebas
 ```
+
+</details>
 
 <div align="center">
 <sub>Proyecto personal de <a href="https://github.com/XesusPatino">@XesusPatino</a></sub>
