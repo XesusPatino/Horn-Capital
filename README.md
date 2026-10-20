@@ -35,8 +35,8 @@ Horn Capital nació para sustituir un sistema de finanzas montado en Notion, que
 era potente pero lento de usar desde el móvil. Es una app web que se instala en
 el teléfono o en el pc como una app más (PWA).
 
-Es **multiusuario por invitación**: cada persona entra con su cuenta y solo ve
-sus propios datos.
+> 🔑 **¿Quieres probarla?** El acceso es por invitación: escríbeme a
+> [xpatinom@gmail.com](mailto:xpatinom@gmail.com?subject=Cuenta%20en%20Horn%20Capital).
 
 ## Qué hace
 
@@ -65,7 +65,7 @@ Un triceratops en la pantalla de inicio te dice cómo vas con el presupuesto del
   <tr>
     <td align="center"><b>Rico</b><br><sub>Te queda el 62,5 % o más</sub></td>
     <td align="center"><b>Normal</b><br><sub>Te queda entre el 25 % y el 62,5 %</sub></td>
-    <td align="center"><b>Vagabundo</b><br><sub>Te queda menos del 25 % >o te has pasado</sub></td>
+    <td align="center"><b>Vagabundo</b><br><sub>Te queda menos del 25 % o te has pasado</sub></td>
   </tr>
 </table>
 
