@@ -4,8 +4,8 @@
 
 # Horn Capital
 
-**Finanzas personales pensadas para el móvil.**
-Apunta un gasto en la caja del súper en diez segundos y sabe, de un vistazo, cómo vas este mes.
+**Aplicación para finanzas personales.**<br>
+*Lleva el control de tus finanzas en segundos.*
 
 ![Next.js](https://img.shields.io/badge/Next.js_16-000000logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
@@ -33,8 +33,7 @@ Apunta un gasto en la caja del súper en diez segundos y sabe, de un vistazo, c�
 
 Horn Capital nació para sustituir un sistema de finanzas montado en Notion, que
 era potente pero lento de usar desde el móvil. Es una app web que se instala en
-el teléfono como una app más (PWA) y que está diseñada **primero para el móvil**,
-no como un escritorio encogido.
+el teléfono o en el pc como una app más (PWA).
 
 Es **multiusuario por invitación**: cada persona entra con su cuenta y solo ve
 sus propios datos.
@@ -43,15 +42,15 @@ sus propios datos.
 
 | | |
 |---|---|
-| 💸 **Movimientos** | Gastos, ingresos y traslados entre cuentas. Un gasto se puede desglosar entre varias categorías. |
+| 💸 **Movimientos** | Gastos, ingresos y traslados entre cuentas.|
 | 🎯 **Presupuesto** | Presupuesto mensual por categoría, con lo que queda en cada una. |
 | 📊 **Análisis** | Reparto del gasto por categoría o por cuenta, comparativa con el mes anterior, histórico y resumen mes a mes. |
 | 🔁 **Rutinas** | Suscripciones, sueldo o alquiler que se repiten (semanal, mensual, trimestral o anual). Se apuntan solas o piden confirmación. |
-| 📈 **Inversiones** | Fondos, ETFs y acciones buscados por ISIN, con su precio de cada día. El saldo total incluye lo que valen hoy. |
+| 📈 **Inversiones** | Fondos, ETFs y acciones buscados por ISIN, con su precio de cada día. El patrimonio total incluye lo que valen hoy. |
 | ⚡ **Atajo del móvil** | Apunta un gasto **sin abrir la app**, desde Atajos de iPhone o HTTP Shortcuts en Android. |
 | 🧮 **Calculadora a futuro** | Cuánto tendrás si sigues ahorrando a tu ritmo, con interés compuesto. |
 | 👁️ **Modo privado** | Difumina los saldos para enseñar la app sin enseñar tu dinero. |
-| 📦 **Tus datos son tuyos** | Importación desde Notion y copia de seguridad en CSV, que se abren en Excel. |
+| 📦 **Tus datos son tuyos** | Importación en CSV y copia de seguridad. |
 
 ## La mascota
 
@@ -64,9 +63,9 @@ Un triceratops en la pantalla de inicio te dice cómo vas con el presupuesto del
     <td align="center"><img src="docs/img/mascota-pobre.png" alt="Triceratops vagabundo" height="200"></td>
   </tr>
   <tr>
-    <td align="center"><b>Rico</b><br><sub>te queda el 62,5 % o más</sub></td>
-    <td align="center"><b>Normal</b><br><sub>te queda entre el 25 % y el 62,5 %</sub></td>
-    <td align="center"><b>Vagabundo</b><br><sub>te queda menos del 25 %,<br>o te has pasado</sub></td>
+    <td align="center"><b>Rico</b><br><sub>Te queda el 62,5 % o más</sub></td>
+    <td align="center"><b>Normal</b><br><sub>Te queda entre el 25 % y el 62,5 %</sub></td>
+    <td align="center"><b>Vagabundo</b><br><sub>Te queda menos del 25 % >o te has pasado</sub></td>
   </tr>
 </table>
 
@@ -84,7 +83,7 @@ flowchart LR
 - **Todo se calcula en el servidor.** Las pantallas son Server Components y lo
   que escribe en la base son Server Actions, así que el móvil recibe la página
   ya hecha.
-- **El saldo nunca se guarda: se calcula.** Sale siempre de los movimientos, así
+- **El saldo nunca se guarda, se calcula.** Sale siempre de los movimientos, así
   que es imposible que se descuadre. Si no coincide con el banco, un ajuste de
   saldo lo corrige sin contar como ingreso ni gasto.
 - **Cada persona ve solo lo suyo.** Todas las consultas filtran por el usuario
